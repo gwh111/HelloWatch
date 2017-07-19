@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		18B4FE801ADE68BE00D740EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4FE7F1ADE68BE00D740EC /* main.m */; };
 		18B4FE831ADE68BE00D740EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4FE821ADE68BE00D740EC /* AppDelegate.m */; };
-		18B4FE861ADE68BE00D740EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B4FE851ADE68BE00D740EC /* ViewController.m */; };
 		18B4FE891ADE68BE00D740EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B4FE871ADE68BE00D740EC /* Main.storyboard */; };
 		18B4FE8B1ADE68BE00D740EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4FE8A1ADE68BE00D740EC /* Images.xcassets */; };
 		18B4FE8E1ADE68BE00D740EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4FE8C1ADE68BE00D740EC /* LaunchScreen.xib */; };
@@ -20,6 +19,7 @@
 		18B4FEBB1ADE68F800D740EC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B4FEB91ADE68F800D740EC /* Interface.storyboard */; };
 		18B4FEBD1ADE68F800D740EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B4FEBC1ADE68F800D740EC /* Images.xcassets */; };
 		18B4FEC01ADE68F800D740EC /* HelloWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18B4FEA71ADE68F800D740EC /* HelloWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18B6BCEE1F1F01800019391D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6BCED1F1F01800019391D /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,6 @@
 		18B4FE7F1ADE68BE00D740EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18B4FE811ADE68BE00D740EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18B4FE821ADE68BE00D740EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18B4FE841ADE68BE00D740EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18B4FE851ADE68BE00D740EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18B4FE881ADE68BE00D740EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18B4FE8A1ADE68BE00D740EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18B4FE8D1ADE68BE00D740EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,6 +81,8 @@
 		18B4FEB81ADE68F800D740EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B4FEBA1ADE68F800D740EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		18B4FEBC1ADE68F800D740EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18B6BCEC1F1F01800019391D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18B6BCED1F1F01800019391D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +137,8 @@
 			children = (
 				18B4FE811ADE68BE00D740EC /* AppDelegate.h */,
 				18B4FE821ADE68BE00D740EC /* AppDelegate.m */,
-				18B4FE841ADE68BE00D740EC /* ViewController.h */,
-				18B4FE851ADE68BE00D740EC /* ViewController.m */,
 				18B4FE871ADE68BE00D740EC /* Main.storyboard */,
+				18B6BCEB1F1F01800019391D /* bench */,
 				18B4FE8A1ADE68BE00D740EC /* Images.xcassets */,
 				18B4FE8C1ADE68BE00D740EC /* LaunchScreen.xib */,
 				18B4FE7D1ADE68BE00D740EC /* Supporting Files */,
@@ -208,6 +207,15 @@
 				18B4FEB81ADE68F800D740EC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B6BCEB1F1F01800019391D /* bench */ = {
+			isa = PBXGroup;
+			children = (
+				18B6BCEC1F1F01800019391D /* ViewController.h */,
+				18B6BCED1F1F01800019391D /* ViewController.m */,
+			);
+			path = bench;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,16 +302,20 @@
 				TargetAttributes = {
 					18B4FE791ADE68BE00D740EC = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = V988GE98EW;
 					};
 					18B4FE921ADE68BE00D740EC = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = V988GE98EW;
 						TestTargetID = 18B4FE791ADE68BE00D740EC;
 					};
 					18B4FEA61ADE68F800D740EC = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = V988GE98EW;
 					};
 					18B4FEB11ADE68F800D740EC = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = V988GE98EW;
 					};
 				};
 			};
@@ -371,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B4FE861ADE68BE00D740EC /* ViewController.m in Sources */,
+				18B6BCEE1F1F01800019391D /* ViewController.m in Sources */,
 				18B4FE831ADE68BE00D740EC /* AppDelegate.m in Sources */,
 				18B4FE801ADE68BE00D740EC /* main.m in Sources */,
 			);
@@ -527,8 +539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V988GE98EW;
 				INFOPLIST_FILE = HelloWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -537,8 +551,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V988GE98EW;
 				INFOPLIST_FILE = HelloWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -547,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V988GE98EW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -566,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V988GE98EW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -581,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V988GE98EW;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -599,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V988GE98EW;
 				IBSC_MODULE = HelloWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "HelloWatch WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -612,6 +632,7 @@
 		18B4FEC51ADE68F800D740EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = V988GE98EW;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -626,6 +647,7 @@
 		18B4FEC61ADE68F800D740EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = V988GE98EW;
 				INFOPLIST_FILE = "HelloWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -652,6 +674,7 @@
 				18B4FE9F1ADE68BE00D740EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B4FEA01ADE68BE00D740EC /* Build configuration list for PBXNativeTarget "HelloWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -660,6 +683,7 @@
 				18B4FEA21ADE68BE00D740EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B4FEC11ADE68F800D740EC /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -668,6 +692,7 @@
 				18B4FEC31ADE68F800D740EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B4FEC41ADE68F800D740EC /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -676,6 +701,7 @@
 				18B4FEC61ADE68F800D740EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
