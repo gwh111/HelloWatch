@@ -16,6 +16,5 @@ Pod::Spec.new do |spec|
   spec.ios.source_files   = 'HelloWatch/bench/**/*', 'HelloWatch/bench/**/*'
   spec.osx.source_files   = 'HelloWatch/bench/**/*'
 
-  spec.ios.framework  = 'UIKit'
 
 end
